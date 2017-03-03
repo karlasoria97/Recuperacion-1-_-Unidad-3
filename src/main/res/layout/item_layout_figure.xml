@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_figure">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_figure"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_teo"
+        android:layout_toRightOf="@id/iv_figure"
+        android:textSize="15pt"
+        android:text="Teo"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_delete_figure"
+        android:layout_below="@+id/bt_edit_figure"
+        android:layout_toRightOf="@+id/tv_teo"
+        android:src="@android:drawable/ic_menu_delete"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_code"
+        android:layout_toRightOf="@id/iv_figure"
+        android:layout_below="@+id/tv_teo"
+        android:text="Code"
+        android:textSize="10pt"
+
+        />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_edit_figure"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_teo"
+        android:layout_toRightOf="@+id/tv_teo"/>
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

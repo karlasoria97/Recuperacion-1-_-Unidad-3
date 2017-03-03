@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FigureActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_teo"
+        android:inputType="text"
+        android:hint="@string/teo"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/code"
+        android:layout_below="@+id/et_teo"
+        android:id="@+id/et_code"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/drawer"
+        android:id="@+id/et_drawer"
+        android:layout_below="@+id/et_code"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/figure"
+        android:id="@+id/et_figure"
+        android:layout_below="@+id/et_drawer"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/user"
+        android:id="@+id/et_user"
+        android:layout_below="@+id/et_figure"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/bibref"
+        android:id="@+id/et_bibref"
+        android:layout_below="@+id/et_user"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/date_submission"
+        android:id="@+id/et_date"
+        android:layout_below="@+id/et_bibref"/>
+
+       <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_figure"
+        android:layout_below="@+id/et_productCategory"
+        android:id="@+id/bt_save_figure"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bt_save_figure"
+        android:id="@+id/rv_figure_list"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.edu.utng.orders.VehiculoActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_nro_placa"
+        android:inputType="text"
+        android:hint="@string/placa"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/descripcion_vehiculo"
+        android:layout_below="@+id/et_nro_placa"
+        android:id="@+id/et_descripcion_vehiculo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/numero_asiento"
+        android:id="@+id/et_num_asiento"
+        android:layout_below="@+id/et_descripcion_vehiculo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/peso"
+        android:id="@+id/et_peso"
+        android:layout_below="@+id/et_num_asiento"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/estado"
+        android:id="@+id/et_estado"
+        android:layout_below="@+id/et_peso"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/carga_maxima"
+        android:id="@+id/et_carga"
+        android:layout_below="@+id/et_estado"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/a_o_de_fabricaci_n"
+        android:id="@+id/et_anioFab"
+        android:layout_below="@+id/et_carga"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/a_o_adquirido"
+        android:id="@+id/et_anioAdq"
+        android:layout_below="@+id/et_anioFab"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_veh"
+        android:layout_below="@+id/et_anioAdq"
+        android:id="@+id/bt_save_veh"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bt_save_veh"
+        android:id="@+id/rv_vehiculo_list"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
